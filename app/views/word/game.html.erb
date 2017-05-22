@@ -1,0 +1,19 @@
+
+
+
+<div class="container text-center">
+  <div class="wrapper-blue margin-top">
+  <ul class="list-inline">
+    <% @grid.each do |letter| %>
+    <li class="grid"><%= letter %></li>
+    <% end %>
+  </ul>
+    <form action="/score" method="get">
+      <label for="word">Enter your guess</label>
+      <input type="text" id="word" name="guess" placeholder="my guess" class="form-control">
+      <input type="hidden" name="grid" value="<%= @grid %>">
+      <input type="hidden" name="start_time" value="<%= @start_time %>">
+      <input type="submit" value="Go on!" class="btn btn-primary">
+    </form>
+  </div>
+</div>

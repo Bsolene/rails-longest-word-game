@@ -1,0 +1,29 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.margin-side{
+  margin: 0 200px;
+}
+.margin-top{
+  margin-top: 30px;
+}
+.wrapper-blue{
+  background-color: #DEFCF9;
+  border: 1px solid #CADEFC;
+  padding: 50px 30px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.wrapper-yellow{
+  background-color: #FFE666;
+  border: 1px solid #ED9F31;
+  padding: 30px 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.grid{
+  border: 2px dotted #CADEFC;
+  border-radius: 5px;
+  font-size: 25px;
+}

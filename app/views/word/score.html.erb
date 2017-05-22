@@ -1,0 +1,18 @@
+
+<div class="container text-center">
+  <div class="wrapper-yellow margin-top">
+
+    <h1>Score</h1>
+
+    <ul class="list-unstyled">
+      <li><strong>Time : </strong><%= @result[:time].round(1) %></li>
+      <li><strong>Score : </strong><%= @result[:score].round(1) %></li>
+      <li><strong><%= @result[:message] %></strong></li>
+    </ul>
+
+    <h3>Stats</h3>
+    <div><strong>Number of games : </strong><%= @results[:time_played] %></div>
+    <div><strong>Average score : </strong><%= @results[:average] %></div>
+    <div class="btn btn-default"><%= link_to "Play again", game_path %></div>
+  </div>
+</div>
