@@ -11,6 +11,7 @@
     </ul>
 
     <h3>Stats</h3>
+    <%= @results %>
     <div><strong>Number of games : </strong><%= @results[:time_played] %></div>
     <div><strong>Average score : </strong><%= @results[:average] %></div>
     <div class="btn btn-default"><%= link_to "Play again", game_path %></div>
